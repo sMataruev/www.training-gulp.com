@@ -1,0 +1,30 @@
+.title {
+  color: $main-font-color;
+  font-size: 63px;
+  @include bernier();
+  padding: 45px 80px;
+  $margin: 40px; //переменная
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    @include centered(y);
+    background: rgba($main-font-color, .2);
+    width: 22px;
+    height: 5px;
+  }
+
+  &:after {
+    left: $margin;
+  }
+  &:before {
+    right: $margin;
+  }
+
+}
