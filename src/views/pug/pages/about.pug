@@ -1,16 +1,23 @@
 extends ../_main-template
 block content
 	section.section.hero
+		.hero__bg
+			img(src="../img/bg/Mountain.jpg" alt="").hero__bg-img
+
+
 		ul.socials
 			each item in ['vk','gh','ln']
 				li.socials__item
 					a(href='#' class="socials__link socials__link_")= item
 		a(href="#").hamburger
 		a(href="#").down-arrow
+
 		.hero__title
-			img(src='../../' alt='').section-title
+			img(src='../img/bg/port.png' alt='').section-title
 			.user.hero__user-block
 				.user__photo
+					.user__photo-avater
+						img(src="../img/user.png" alt="").user__photo-img
 				.user__name
 				.user__desc
 	section.section.about
