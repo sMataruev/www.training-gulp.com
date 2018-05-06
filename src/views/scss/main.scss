@@ -1,14 +1,12 @@
-$white: #efeee9;
+$white : #efeee9;
 $beige: #eeebdf;
-$main-font-color: #373e42;
+$main-font-color : #373e42;
 
 //layout setups
 @import "layout/setups";
 @import "layout/fonts";
 
-//sprites
-@import "../sprite/sprite";
-
 //mixins
 @import "helpers/mixins";
-@import "blocks/**/*.scss";
+
+@import "blocks/**/*";

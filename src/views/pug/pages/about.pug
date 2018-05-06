@@ -9,20 +9,27 @@ block content
 			each item in ['vk','gh','ln']
 				li.socials__item
 					a(href='#' class="socials__link socials__link_")= item
+
 		a(href="#").hamburger
+
 		a(href="#").down-arrow
+			img(src='../img/down-arrow.svg').down-arrow__icon
 
 		.hero__title
 			img(src='../img/bg/port.png' alt='').section-title
 			.user.hero__user-block
 				.user__photo
-					.user__photo-avater
+					.user__photo-avatar
 						img(src="../img/user.png" alt="").user__photo-img
-				.user__name
-				.user__desc
+				.user__name Tony Robbins
+				.user__desc Front-end developer
 	section.section.about
 		.about__left
-			svg.triangle_fill_white
+			svg(
+			viewBox="0 0 1000 100"
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_white about__triangles")
+				polygon(points="0,0 0,100 1000,100")
 			.title.about__section-title
 				| Обо мне
 			.user-about
@@ -33,7 +40,11 @@ block content
 				.user-about__text
 					p Я программист из Новоросийска. Мне 32 года! Я занимаюсь веб рахработкой
 		.about__right
-			svg.triangle_fill_beige
+			svg(
+			viewBox="0 0 1000 100"
+			preserveAspectRatio="none"
+			class="triangle triangle_fill_beige about__triangles")
+				polygon(points="0,100 1000,100 1000,0")
 			.about-data
 				.about-data__description.about-user-info
 					.about-user-info__title
