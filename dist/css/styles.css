@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'bernier';
+  src: url("/dist/fonts/bernierregular-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-instagram-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 256px;
+  height: 256px; }
+
+.icon-instagram {
+  background-image: url(../img/sprite.png);
+  background-position: -326px 0px;
+  width: 256px;
+  height: 256px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dC9mb250cy5zY3NzIiwibGF5b3V0L3NldHVwcy5zY3NzIiwiLi4vc3ByaXRlL3Nwcml0ZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDBFQUFZO0FDQVo7RUFDRSxhQUFZLEVBQ2I7O0FBRUQ7RUFDQyxhQUFZO0VBQ1osVUFBUztFQUNULHlDQUF3QztFQUN4QyxnQkFBZTtFQUNmLGtCQUFpQjtFQUNqQixvQ0FBbUMsRUFDbkM7O0FBRUQ7RUFDQyxpQkFBZ0I7RUFDaEIsbUJBQWtCO0VBQ2xCLGlCQUFnQixFQUNoQjs7QUFFRDtFQUNDLFdBQVU7RUFDVixVQUFTO0VBQ1QsaUJBQWdCLEVBQ2hCOztBQUVEO0VBQ0MsVUFBUyxFQUNUOztBQUVEO0VBQ0UsY0FBYTtFQUNiLGlCQUFnQjtFQUNoQixvQkFBbUIsRUFDcEI7O0FBRUQ7RUFDQyx1QkFBc0IsRUFDdEI7O0FEbENEO0VBQ0MsdUJBQXNCO0VBQ3RCLDJFQUEwRTtFQUMxRSxvQkFBbUI7RUFDbkIsbUJBQWtCLEVBQUE7O0FFUG5COzs7Ozs7Ozs7Ozs7Ozs7OztFQWlCRTtBQUNGO0VBQ0UseUNBQXdDO0VBQ3hDLDZCQUE0QjtFQUM1QixhQUFZO0VBQ1osY0FBYSxFQUNkOztBQUNEO0VBQ0UseUNBQXdDO0VBQ3hDLGdDQUErQjtFQUMvQixhQUFZO0VBQ1osY0FBYSxFQUNkIiwiZmlsZSI6InN0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCgnaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzozMDAsNDAwLDUwMCcpO1xuXG5cbkBmb250LWZhY2Uge1xuXHRmb250LWZhbWlseTogJ2Jlcm5pZXInO1xuXHRzcmM6IHVybCgnL2Rpc3QvZm9udHMvYmVybmllcnJlZ3VsYXItcmVndWxhci13ZWJmb250LndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcblx0Zm9udC13ZWlnaHQ6IG5vcm1hbDtcblx0Zm9udC1zdHlsZTogbm9ybWFsO1xufVxuXG5AbWl4aW4gYmVybmllcigpIHtcblx0Zm9udC1mYW1pbHk6ICdiZXJuaWVyJztcbn0iLCJodG1sIHtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG5ib2R5IHtcblx0aGVpZ2h0OiAxMDAlO1xuXHRtYXJnaW46IDA7XG5cdGZvbnQtZmFtaWx5OiBcIlJvYm90b1wiLCBBcmlhbCwgc2Fucy1zZXJpZjtcblx0Zm9udC1zaXplOiAxNHB4O1xuXHRsaW5lLWhlaWdodDogMS40Mjtcblx0LXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG59XG5cbi53cmFwcGVyIHtcblx0bWluLWhlaWdodDogMTAwJTtcblx0cG9zaXRpb246IHJlbGF0aXZlO1xuXHRvdmVyZmxvdzogaGlkZGVuO1xufVxuXG51bCB7XG5cdHBhZGRpbmc6IDA7XG5cdG1hcmdpbjogMDtcblx0bGlzdC1zdHlsZTogbm9uZTtcbn1cblxucCB7XG5cdG1hcmdpbjogMDtcbn1cblxuaDEsIGgyLCBoMywgaDQsIGg1IHtcbiAgbWFyZ2luLXRvcDogMDtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbn1cblxuKiB7XG5cdGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59IiwiLypcbkljb24gY2xhc3NlcyBjYW4gYmUgdXNlZCBlbnRpcmVseSBzdGFuZGFsb25lLiBUaGV5IGFyZSBuYW1lZCBhZnRlciB0aGVpciBvcmlnaW5hbCBmaWxlIG5hbWVzLlxuXG5FeGFtcGxlIHVzYWdlIGluIEhUTUw6XG5cbmBkaXNwbGF5OiBibG9ja2Agc3ByaXRlOlxuPGRpdiBjbGFzcz1cImljb24taG9tZVwiPjwvZGl2PlxuXG5UbyBjaGFuZ2UgYGRpc3BsYXlgIChlLmcuIGBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7YCksIHdlIHN1Z2dlc3QgdXNpbmcgYSBjb21tb24gQ1NTIGNsYXNzOlxuXG4vLyBDU1Ncbi5pY29uIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuXG4vLyBIVE1MXG48aSBjbGFzcz1cImljb24gaWNvbi1ob21lXCI+PC9pPlxuKi9cbi5pY29uLWluc3RhZ3JhbS1ob3ZlciB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9pbWcvc3ByaXRlLnBuZyk7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IDBweCAwcHg7XG4gIHdpZHRoOiAyNTZweDtcbiAgaGVpZ2h0OiAyNTZweDtcbn1cbi5pY29uLWluc3RhZ3JhbSB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9pbWcvc3ByaXRlLnBuZyk7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IC0zMjZweCAwcHg7XG4gIHdpZHRoOiAyNTZweDtcbiAgaGVpZ2h0OiAyNTZweDtcbn1cbiJdfQ== */
