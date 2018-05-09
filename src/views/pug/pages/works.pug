@@ -1,0 +1,35 @@
+extends ../main-layout
+
+block title
+    | Мои Работы
+
+block content
+    .wrapper
+
+        include ../parts/hero
+        section.section.works-head
+            svg(viewbox="0 0 1000 110" preserveAspectRatio="none").works-head__triangle.works-head__triangle_left
+                polygon(points="0,0 0,110 1000, 110")
+            svg(viewbox="0 0 1000 110" preserveAspectRatio="none").works-head__triangle.works-head__triangle_right
+                polygon(points="0,110 1000,110 1000,0")
+            .section-title(style="background-image: url('img/decor/works-header.png')")
+                | Мои работы
+        section.section.slider
+            .slider__col.slider__col_left
+                .slider__display
+                    img(src="img/content/1.png" alt="").slider__display-pic
+                .slider__desc
+                    .slider__desc-title
+                        .block-title Сайт школы онлайн образования
+                    .slider__desc-skills
+                        | HTML, css, javascript
+                    .slider__desc-btn
+                        a(href="#").btn Посмотреть сайт
+            .slider__col.slider__col_right
+                .slider__btns
+                    a(href="#").slider__btn.slider__btn_left
+                    a(href="#").slider__btn.slider__btn_right
+                    
+
+        include ../parts/reviews
+        include ../parts/footer

@@ -41,7 +41,7 @@ var path = {
         dist: DIST_DIR + 'css'
     },
     pug: {
-        entry: SRC_DIR + 'views/pug/pages/about.pug',
+        entry: SRC_DIR + 'views/pug/pages/*.pug',
         src: SRC_DIR + 'views/pug/**/*.pug',
         dist: DIST_DIR + 'html'
     },
@@ -110,10 +110,10 @@ gulp.task('scss', () => {
             browsers: ['> 5%'],
             cascade: false
         }))
-        // .pipe(cssunit({
-        // 	type     :    'px-to-rem',
-        // 	rootSize  :    16
-        // }))
+        .pipe(cssunit({
+        	type     :    'px-to-rem',
+        	rootSize  :    16
+        }))
         // .pipe(CSSO())
         .pipe(concat('styles.css'))
         .pipe(sourcemaps.write())
@@ -134,9 +134,9 @@ gulp.task('pug', () => {
             locals: locals,
             pretty: true
         }))
-        .pipe(rename(
-            'index.html'
-        ))
+        // .pipe(rename(
+        //     'index.html'
+        // ))
         .pipe(gulp.dest(path.pug.dist))
         .pipe(browser.stream(true));
 });

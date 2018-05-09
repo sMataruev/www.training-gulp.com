@@ -1,0 +1,39 @@
+.footer {
+	background: rgba(#373e42, .85);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+}
+
+.footer__row {
+	@extend %clearfix;
+	padding: 0 5%;
+}
+
+.footer__row_top {
+	border-bottom: 1px solid rgba(#ffffff, .1);
+}
+
+.footer__left, .footer__right {
+	width: 50%;
+	float: left;
+}
+
+.footer__right {
+	text-align: right;
+}
+
+.footer__about, .footer__about-user-name {
+	font-size: 16px;
+	color: rgba(#fff, .5);
+}
+
+.footer__about {
+	padding-top: 15px;
+}
+
+.footer__about-user-name {
+	padding-top: 25px;
+}

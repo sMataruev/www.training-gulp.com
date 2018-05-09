@@ -1,6 +1,9 @@
 $white : #efeee9;
 $beige: #eeebdf;
 $main-font-color : #373e42;
+$gray: #c7c7c7;
+$green: #62bd72;
+$light-beige: #f4f1e5;
 
 //layout setups
 @import "layout/setups";
@@ -10,3 +13,4 @@ $main-font-color : #373e42;
 @import "helpers/mixins";
 
 @import "blocks/**/*";
+

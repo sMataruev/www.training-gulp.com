@@ -1,0 +1,49 @@
+extends ../main-layout
+
+block title
+    | Главная Страница
+
+block content
+    .wrapper
+        include ../parts/hero
+
+        section.section.about
+            .about__col.about__col_left
+                svg(viewbox="0 0 1000 110" preserveAspectRatio="none").about__triangle
+                    polygon(points="0,0 0,110 1000, 110")
+                .about__col-content
+                    .about__col-title
+                        .section-title(style="background-image: url('img/decor/about_header.png')")
+                            | Обо мне
+                    .about
+                        .about__pic
+                            img(src="img/content/about.jpg" alt="").about__pic-img
+                        .about__title
+                            .block-title Кто я
+                        .block-text
+                            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+            .about__col.about__col_right
+                svg(viewbox="0 0 1000 110" preserveAspectRatio="none").about__triangle
+                    polygon(points="0,110 1000,110 1000,0")
+                .about__col-content
+                    .skills
+                        .skills__title
+                            .block-title Чем я могу быть вам полезен
+                        .skills__text
+                            p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                        ul.skills-group
+                            each skill in ['Frontend']
+                                li.skills-group__item
+                                    .skills-group__title= skill
+                                    ul.skills-list
+                                        - for (var j = 0; j < 4; j++)
+                                            li.skills-list__item
+                                                .skill
+                                                    svg(viewbox="0 0 100 100" preserveAspectRatio="none").skill__circle
+                                                        circle(cx="50" cy="50" r="40").skills__circle-under
+                                                        circle(cx="50" cy="50" r="40").skills__circle-above
+                                                    .skill__title HTML5
+        include ../parts/map
+        include ../parts/footer

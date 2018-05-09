@@ -1,0 +1,28 @@
+.skill {
+	position: relative;
+}
+
+
+
+.skill__title {
+	text-align: center;
+	margin-bottom: 30px;
+	color: $green;
+	font-size: 13px;
+}
+
+.skill__circle {
+	width: 100px;
+	height: 100px;
+	display: block;
+	fill: transparent;
+	stroke-width: 15;
+}
+
+.skill__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+

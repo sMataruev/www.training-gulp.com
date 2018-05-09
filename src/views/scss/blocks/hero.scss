@@ -1,13 +1,21 @@
 .hero {
-  height: 600px;
-  overflow: hidden;
-  position: relative;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
 }
-.hero__title {
-  @include centered('y');
-  text-align: center;
-  width: 100%;
+
+.hero__bg {
+	top: 0;
+	width: 100%;
+	@include centered(x);
 }
-.hero__user-block {
-  @include centered('both');
+
+.hero__container {
+	@include centered(y);
+	width: 100%;
 }
+
+.hero-title-pic {
+	@include centered();
+}
+

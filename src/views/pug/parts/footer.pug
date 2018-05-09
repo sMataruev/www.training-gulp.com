@@ -1,0 +1,21 @@
+footer.footer
+    .footer__row.footer__row_top
+        .footer__left
+            ul.nav-menu
+                each link in ['Мои работы', "Обо мне", "Блог", "Авторизация"]
+                    li.nav-menu__item
+                        a(href="#").nav-menu__link= link
+        .footer__right
+            ul.socials.socials_footer
+                -
+                    icons = ['vk', 'github', 'in'];
+                each icon in icons
+                    li.socials__item
+                        a(href="#").socials__link
+                            svg.socials__icon
+                                use(xlink:href=`img/sprite/sprite.svg#${icon}`)
+    .footer__row
+        .footer__left
+            .footer__about Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer__right
+            .footer__about-user-name © Владимир Астахов | создано с любовью в LoftSchool | 2016

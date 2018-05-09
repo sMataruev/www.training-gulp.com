@@ -1,15 +1,73 @@
 .about {
-  @extend %clearfix;
+	@extend %clearfix;
+	position: relative;
 }
-.about__left, .about__right {
-  float: left;
-  width: 50%;
-  position: relative;
-}
-.about__left {
-  background: $white;
-}
-.about__right {
-  background: $beige;
 
+.about__title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.about__pic {
+	margin-bottom: 35px;
+	text-align: center;
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+	}
+}
+
+.about__col-title {
+	text-align: center;
+}
+
+.about__col {
+	float: left;
+	width: 50%;
+	min-height: 1000px;
+	position: relative;
+
+	&_left {
+		background: $white;
+
+		.about__triangle {
+			left: 0;
+			fill: $white;
+		}
+	}
+
+	&_right {
+		background: $beige;
+
+		.about__triangle {
+			right: 0;
+			fill: $beige;
+		}
+	}
+}
+
+.about__triangle {
+	display: block;
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	bottom: 100%;
+}
+
+.about__col-content {
+	padding: 0 10%;
+}
+
+.block-text {
+	font-size: 16px;
+	color: $gray;
+
+	p {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }

@@ -1,0 +1,39 @@
+.socials {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+	&_footer {
+		position: static;
+		display: inline-block;
+		padding-top: 20px;
+
+		.socials__link {
+			height: 36px;
+			width: 36px;
+			position: relative;
+			border-radius: 50%;
+			border: 1px solid rgba(#9a9d9f, .5);
+			display: block;
+
+			.socials__icon {
+				@include centered();
+			}
+		}
+	}
+}
+
+.socials__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.socials__icon {
+	width: 25px;
+	height: 35px;
+}

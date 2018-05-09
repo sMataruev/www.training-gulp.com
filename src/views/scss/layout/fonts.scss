@@ -3,10 +3,11 @@
 
 @font-face {
 	font-family: 'bernier';
-	src: url('/dist/fonts/bernierregular-regular-webfont.woff') format('woff');
+	src: url('../fonts/bernierregular-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
+
 
 @mixin bernier() {
 	font-family: 'bernier', sans-serif;

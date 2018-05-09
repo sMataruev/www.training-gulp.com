@@ -1,0 +1,21 @@
+.works-head {
+	position: relative;
+	background: $light-beige;
+	text-align: center;
+}
+
+.works-head__triangle {
+	fill: $light-beige;
+	position: absolute;
+	bottom: 100%;
+	width: 50%;
+	height: 110px;
+}
+
+.works-head__triangle_left {
+	left: 0;
+}
+
+.works-head__triangle_right {
+	right: 0;
+}

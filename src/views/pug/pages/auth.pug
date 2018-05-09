@@ -1,0 +1,24 @@
+extends ../main-layout
+
+block title
+    | Приветствие
+
+block content
+
+  .auth-container
+    .auth
+      .auth__info
+        .user
+          .user__photo
+            img(src="img/content/user.jpg", alt="").user__avatar
+          .user__name Владимир Астахов
+        ul.socials
+          each icon in ['vk', 'github', 'in']
+            li.socials__item
+                a(href="#").socials__link
+                    svg.socials__icon
+                        use(xlink:href=`img/sprite/sprite.svg#${icon}`)
+      .auth__btns
+        a(href="#").auth__btn Мои работы
+        a(href="#").auth__btn Обо мне
+        a(href="#").auth__btn Блог

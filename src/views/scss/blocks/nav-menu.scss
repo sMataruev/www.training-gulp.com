@@ -1,0 +1,18 @@
+.nav-menu {
+	padding: 25px 0;
+}
+.nav-menu__item {
+	display: inline-block;
+	margin-right: 30px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.nav-menu__link {
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}

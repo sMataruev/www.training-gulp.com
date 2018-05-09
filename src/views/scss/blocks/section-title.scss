@@ -1,4 +1,37 @@
 .section-title {
-  display: inline-block;
-  width: 100%;
+	font-size: 63px;
+	color: #373e42;
+	text-align: center;
+	padding: 45px 80px;
+	display: inline-block;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include bernier;
+	position: relative;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		width: 22px;
+		height: 5px;
+		@include centered(y);
+		background: #c9c9c6;
+	}
+
+	$dash-margin: 40px;
+
+	&:before {
+		left: $dash-margin;
+	}
+
+	&:after {
+		right: $dash-margin;
+	}
+
+  @include phones() {
+    &:after, &:before {
+      display: none;
+    }
+  }
 }
