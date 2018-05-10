@@ -1,3 +1,4 @@
+//центровка элементов по разным осям
 @mixin centered($axis: 'both') {
   position: absolute;
 
@@ -15,6 +16,8 @@
     transform: translateY(-50%);
   }
 }
+
+// очистка float
 %clearfix {
   &:after {
     content: "";
@@ -23,14 +26,18 @@
   }
 }
 
+
+//медиа запрос для планшетов
 @mixin tablets() {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
+//медиа запрос для телефонов
 @mixin phones() {
   @media screen and (max-width: 480px) {
     @content;
   }
 }
+

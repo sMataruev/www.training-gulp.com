@@ -36,5 +36,8 @@
     "run-sequence": "^2.2.1",
     "vinyl-ftp": "^0.6.1",
     "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "backstopjs": "^3.2.15"
   }
 }
