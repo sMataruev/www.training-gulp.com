@@ -7500,6 +7500,10 @@ slash@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
 
+slimerjs@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/slimerjs/-/slimerjs-1.0.0.tgz#c5ea457541a1ecd657892c0e013630abc69a2091"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"

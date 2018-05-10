@@ -38,6 +38,7 @@
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "backstopjs": "^3.2.15"
+    "backstopjs": "^3.2.15",
+    "slimerjs": "^1.0.0"
   }
 }
